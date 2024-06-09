@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monitor Pesanan - Washoee</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="navbar-logo"
+          ><img src="img/LOGO.png" alt="LOGO"
+        /></a>
+        <div class="navbar-nav">
+          <a href="index.html">Beranda</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="order-tracking">
+        <div class="container">
+          <h1>Pemantauan Pesanan</h1>
+          <p>Masukkan nomor pesanan Anda untuk melacak status pesanan Anda.</p>
+          <form id="order-tracking-form">
+            <input
+              type="text"
+              id="order-number"
+              placeholder="Nomor Pesanan"
+              required
+            />
+            <button type="submit">Lacak</button>
+          </form>
+          <div id="order-status">
+            <h2>Status Pengerjaan Pesanan</h2>
+            <ul>
+              <li><span class="status-diterima"></span> Pesanan diterima</li>
+              <li>
+                <span class="status-proses"></span> Sedang dalam proses
+                pencucian
+              </li>
+              <li>
+                <span class="status-pengecekan"></span> Sedang dalam proses
+                pengecekan
+              </li>
+              <li><span class="status-siap"></span> Siap untuk diambil</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--footer start-->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Beranda</a>
+        <a href="index.html">Layanan</a>
+        <a href="index.html">Tentang</a>
+        <a href="monitoring.html">Pemantauan Pesanan</a>
+        <a href="index.html">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by<a href=""> Washoee Team</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!--footer end-->
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
